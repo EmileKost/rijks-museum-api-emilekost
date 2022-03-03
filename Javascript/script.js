@@ -1,45 +1,65 @@
 console.log('test134');
 
-const dataRembrandt = 'https://www.rijksmuseum.nl/api/nl/collection?key=xvdOJegg&involvedMaker=Rembrandt+van+Rijn';
-const dataVermeer = 'https://www.rijksmuseum.nl/api/nl/collection?key=xvdOJegg&involvedMaker=Johannes+Vermeer';
-
-const geenContent = document.querySelector('p');
-const feedback = document.querySelector('section');
-
-feedback.textContent = 'De content is aan het laden!';
-geenContent.textContent = 'Oeps, geen content geladen, check jouw internetverbinding';
-
-krijgDataRembrandt();
-krijgDataVermeer();
+const rijksData = 'https://www.rijksmuseum.nl/api/nl/collection?key=xvdOJegg&ps=10imgonly=true';
+const feedback = document.getElementById('feedback-melding');
+feedback.textContent = 'De content is aan het laden, even geduld!';
+const errorMelding = document.getElementById('error-melding');
+errorMelding.textContent = '';
 
 
-function krijgDataRembrandt() {
-    fetch(dataRembrandt).then(function(reactionRembrandt){
-        return reactionRembrandt.json();
-    }) .then(function(dataRembrandt){
-        const listRembrandt = $('ul');
-        for(let i=0; dataRembrandt.artObjects.length; i++) {
-            listRembrandt.insertAdjacentHTML('beforebegin', `<li><h4>${dataRembrandt.artObjects[i].title}</h4><img src="${dataRembrandt.artObjects[i].webImage.url}" alt="${dataRembrandt.artObjects[i].title}"></li>`);
-            feedback.textContent = '';
-            geenContent.textContent = '';
-        }
+
+//Met deze functie wordt de data van de rijksmuseum API opgehaald
+getDataRijks();
+
+function getDataRijks() {
+    fetch(rijksData)
+    .then(function(response){
+        return response.json();
+    }).then(function(collection){
+        getAditionalData(collection)
     })
-}
+    .catch((error)=> {
+        console.log('error');
+        errorMelding.textContent = 'Kan informatie niet ophalen. Probeer nogmaals';
+        feedback.textContent = '';
+    });
+};
 
-function krijgDataVermeer() {
-    fetch(dataVermeer).then(function(reactionVermeer){
-        return reactionVermeer.json();
-    }) .then(function(dataVermeer){
-        const listVermeer = document.getElementById('jvermeer');
-        for(let i = 0; dataVermeer.artObjects.length; i++) {
-            listVermeer.insertAdjacentHTML('beforebegin', `<li><h4>${dataVermeer.artObjects[i].title}</h4><img src="${dataVermeer.artObjects[i].webImage.url}" alt="${dataVermeer.artObjects[i].title}"></li>`);
-            feedback.textContent = '';
-            geenContent.textContent = '';
+
+function getAditionalData(collection) {
+    for(let i=0; i < collection.artObjects.length; i++) {
+        fetch('https://www.rijksmuseum.nl/api/nl/collection/' +
+        collection.artObjects[i].objectNumber + '?key=xvdOJegg&ps=10imgonly=true')
+        .then(function(response){
+            return response.json();
+        }).then(function(detailed){
+            renderData(detailed)
+        })
+        .catch((error)=> {
+            console.log('error');
+        });
+    }
+};
+
+function renderData(detailed) {
+    console.log(detailed)
+        const list = $('main');
+        list.insertAdjacentHTML('beforeend',
+        `
+        <ul>
+        <li>
+        <h2>${detailed.artObject.longTitle}</h2>
+        <p>${detailed.artObject.titles}</p>
+        <img src="${detailed.artObject.webImage.url}" alt="${detailed.artObject.title}">
+        </ul>
+        `
+        )
+        feedback.textContent='';{
         }
-    })
-}
+    }
 
-function $(element) {
-    return document.querySelector(element);
-}
 
+    function $(element) {
+        return document.querySelector(element);
+    }
+    
