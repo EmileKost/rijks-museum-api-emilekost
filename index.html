@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    
     <title>Eindopdracht Rijksmuseum</title>
 </head>
 <body>
     <header>
-    <h1>Rijksmuseum Kunstwerken</h1>
+    <h1><a href="index">Rijksmuseum Kunstwerken</a></h1>
     <section></section>
     <p></p>
 </header>
 <main>
-    <article id="feedback-melding">
-        <p></p>
-    </article>
+        <p id="feedback-melding"></p>
     <article id="error-melding">
         <p></p>
     </article>
-    <form>
-        <input type="search" placeholder="Kunstwerk zoeken...">
+    <form id="searchForm">
+        <input id="searchBalk" type="text" placeholder="Kunstwerk zoeken...">
+        <button type="submit" id="searchButton" value="search">Zoeken</button>
     </form>
+    <section>
+        <h1 id="results-header"></h1>
+        <ul id="resultsList"></ul>
+    </section>
+   <section id="mainContent" class="">
+       <h2 id="koptekst">Tien willekeurige kunstwerken</h2>
+       <ul>
+       </ul>
+   </section>
     
 </main>
+<footer>
+    
+</footer>
+<script type="module" src="javascript/script.js"></script>
 </body>
-<script src="Javascript/script.js"></script>
 </html>
