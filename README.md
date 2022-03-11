@@ -71,7 +71,7 @@ Gelukt:
 - Routie.js
 
 Niet gelukt:
-- Error melding (zit een kleine glitch in door het niet kunnen ophalen van een webImage)
+- Error melding (zit een kleine glitch in door het niet kunnen ophalen van een webImage van de API)
 - Skeleton state
 - .filter( ) methode
 
