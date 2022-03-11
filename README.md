@@ -44,6 +44,10 @@ Modules zorgen voor een meer structurelere opbouw van de code. Het was dan ook v
 In de laatste week was de doelstelling om gebruik te maken van routie.js. Dit was voor mij compleet onbekend terrein en had dan ook de nodige hulp nodig. Uiteindelijk heb ik als het ware les van Jorn gekregen en hebben we samen een router kunnen toevoegen. Het was eerste belangrijk om routie te downloaden en deze in de Vendor map te zetten. Daarna konden we daadwerkelijk aan de slag gaan met routie.
 <img width="812" alt="Schermafbeelding 2022-03-11 om 10 59 26" src="https://user-images.githubusercontent.com/70690100/157845179-41c269e4-d4b5-4be4-9693-cf0a26ddd431.png">
  
+ <h2>Front end</h2>
+<img width="397" alt="Schermafbeelding 2022-03-11 om 11 02 23" src="https://user-images.githubusercontent.com/70690100/157845753-1bb33349-817a-49f6-ae37-d9a26b1ff76e.png">
+<img width="359" alt="Schermafbeelding 2022-03-11 om 11 02 43" src="https://user-images.githubusercontent.com/70690100/157845771-120f43ad-5930-41ac-acb1-4e80826aa521.png">
 
+Live demo: 
 
 
