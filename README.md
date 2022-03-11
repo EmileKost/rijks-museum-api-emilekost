@@ -57,8 +57,11 @@ Live demo: https://emilekost.github.io/rijks-museum-api-emilekost/
 - Kunnen zoeken op alle kunst en content van het Rijksmuseum.
 
 <h2>Activity diagram and Wireflow</h2>
-![activityDiagram](https://user-images.githubusercontent.com/70690100/157848656-e946324d-7b5b-4fe7-b1b3-018af70260f2.png)
-![wireflow](https://user-images.githubusercontent.com/70690100/157851522-0e577a08-af97-4d7a-8ab0-d2145b617c88.png)
+<img width="824" alt="Schermafbeelding 2022-03-11 om 11 51 35" src="https://user-images.githubusercontent.com/70690100/157853604-115cc032-6d2c-45d4-92da-726180c10633.png">
+<img width="448" alt="Schermafbeelding 2022-03-11 om 11 53 13" src="https://user-images.githubusercontent.com/70690100/157853686-de679c68-6cc0-4a6c-ba9e-16f679c82427.png">
+
+
+
 
 <h2>Checklist</h2>
 
@@ -69,6 +72,7 @@ Gelukt:
 - Zoekfunctie
 - Modules
 - Routie.js
+
 
 Niet gelukt:
 - Error melding (zit een kleine glitch in door het niet kunnen ophalen van een webImage van de API)
