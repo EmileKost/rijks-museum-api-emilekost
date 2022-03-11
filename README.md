@@ -48,6 +48,33 @@ In de laatste week was de doelstelling om gebruik te maken van routie.js. Dit wa
 <img width="397" alt="Schermafbeelding 2022-03-11 om 11 02 23" src="https://user-images.githubusercontent.com/70690100/157845753-1bb33349-817a-49f6-ae37-d9a26b1ff76e.png">
 <img width="359" alt="Schermafbeelding 2022-03-11 om 11 02 43" src="https://user-images.githubusercontent.com/70690100/157845771-120f43ad-5930-41ac-acb1-4e80826aa521.png">
 
-Live demo: 
+Live demo: https://emilekost.github.io/rijks-museum-api-emilekost/
 
+<h2>Features</h2>
+- Kunnen bekijken van verschillende kunst
+- Kunnen zoeken op alle kunst en geschiedenis van het Rijksmuseum.
 
+<h2>Activity diagram and Wireflow</h2>
+![activityDiagram](https://user-images.githubusercontent.com/70690100/157848656-e946324d-7b5b-4fe7-b1b3-018af70260f2.png)
+![wireflow](https://user-images.githubusercontent.com/70690100/157851522-0e577a08-af97-4d7a-8ab0-d2145b617c88.png)
+
+<h2>Checklist</h2>
+Gelukt:
+- Ophalen API data
+- Renderen API data
+- Loading state
+- Zoekfunctie
+- Modules
+- Routie.js
+
+Niet gelukt:
+- Error melding (zit een kleine glitch in door het niet kunnen ophalen van een webImage)
+- Skeleton state
+- .filter( ) methode
+
+<h2>Bronvermelding</h2>
+Javascript searchbar: https://www.youtube.com/watch?v=wxz5vJ1BWrc
+Fetch API: https://www.youtube.com/watch?v=FN_ffvw_ksE
+Searchbalk: https://dev.to/am20dipi/how-to-build-a-simple-search-bar-in-javascript-4onf
+
+Om eerlijk te zijn ben ik van de bronnen maar deels wijzer geworden en ben ik voornamelijk tot een goed eindproduct gekomen door de hulp van anderen in de klas. Daarom een speciaal bedankje voor: Jorn met het helpen van routes en Jeffrey met het helpen en debuggen van mijn zoekfunctie.
