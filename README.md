@@ -51,8 +51,10 @@ In de laatste week was de doelstelling om gebruik te maken van routie.js. Dit wa
 Live demo: https://emilekost.github.io/rijks-museum-api-emilekost/
 
 <h2>Features</h2>
+- Ophalen van data van rijksmuseum API
+- Data renderen in HTML
 - Kunnen bekijken van verschillende kunst
-- Kunnen zoeken op alle kunst en geschiedenis van het Rijksmuseum.
+- Kunnen zoeken op alle kunst en content van het Rijksmuseum.
 
 <h2>Activity diagram and Wireflow</h2>
 ![activityDiagram](https://user-images.githubusercontent.com/70690100/157848656-e946324d-7b5b-4fe7-b1b3-018af70260f2.png)
