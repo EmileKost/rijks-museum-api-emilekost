@@ -59,6 +59,7 @@ Live demo: https://emilekost.github.io/rijks-museum-api-emilekost/
 ![wireflow](https://user-images.githubusercontent.com/70690100/157851522-0e577a08-af97-4d7a-8ab0-d2145b617c88.png)
 
 <h2>Checklist</h2>
+
 Gelukt:
 - Ophalen API data
 - Renderen API data
