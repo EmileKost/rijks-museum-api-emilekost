@@ -25,11 +25,6 @@ header h1 {
     margin-left: 2.5%;
 }
 
-h1 a {
-    text-decoration: none;
-    color: #e8eddf;
-}
-
 input {
     width: 250px;
     height: 4vh;

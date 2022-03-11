@@ -1,6 +1,4 @@
 
-export const feedback = document.getElementById('feedback-melding');
-feedback.textContent = 'De content is aan het laden, even geduld!';
 
 export function renderData(detailed) {
     console.log(detailed);

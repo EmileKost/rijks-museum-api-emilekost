@@ -1,40 +1,35 @@
 import { getDataRijks } from "../modules/data.js";
-import { searchDataRijks } from "../modules/search.js";
+import { deleteResults, searchDataRijks } from "../modules/search.js";
+import "../modules/vendor/routie.min.js";
 
-//Dit is de event listenter om zo de zoekfunctie te starten.
+export function handleRoutes() {
+    routie(
+        {
+        '': () => {
+            deleteResults();
 
+            let inputField = ""
+            searchDataRijks(inputField);
+        },
+        ":id": inputField => {
+            deleteResults();
+            searchDataRijks(inputField);
+        }
+        })
+}
 
-//Met deze functie wordt de data van de rijksmuseum API opgehaald en hier aangeroepen
-getDataRijks();
+handleRoutes();
 
+function searchField(event) {
+    event.preventDefault();
 
-document.getElementById('searchForm').addEventListener('submit', function(prevent){
-    prevent.preventDefault();
-    const searchBalk = document.getElementById('searchBalk');
-    let searchValue = searchBalk.value;
-    function removeContent() {
-        let allResults = document.querySelectorAll('#resultsList > li');
-        for (var i = 0, l = allResults.length; i < l; i++) {
-            allResults[i].remove();
-            }
+    let searchValue = document.querySelector("input").value;
+    window.location.hash = searchValue;
+}
 
-    }
-    removeContent();
-    searchDataRijks(searchValue);
-})
-
-
-// Zorg dat bij elke nieuwe functie dat alle content wegwordt gehaald en ruimte maakt voor resultaten lijst
-// Responsive maken
-// detailspagina maken dmv routes en detailed data
-
-
-
-
-
+const form = document.querySelector("form");
+form.addEventListener('submit', searchField);
     
-    
-
 
 
 

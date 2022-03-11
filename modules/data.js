@@ -19,7 +19,7 @@ export function getDataRijks() {
         console.log(collection.artObjects)
     })
     .catch((error)=> {
-        console.log('error');
+        console.log(error);
         errorMelding.textContent = 'Kan informatie niet ophalen. Probeer nogmaals';
         feedback.textContent = '';
     });
