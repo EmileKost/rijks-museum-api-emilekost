@@ -173,6 +173,8 @@ Als de hash wordt verandert wordt de functie searchDataRijks(inputField) aangero
  ````
  Bij het renderen van de zoekresultaten wordt allereerst de header aangepast naar "Resultaten voor " + de zoekopdracht. Daarna worden de errormelding en feedback melding allebei verwijdert. Om de zoekresultaten kwijt te kunnen wordt er een resultsList variabele aangemaakt. Daarna wordt door middel van insertAdjacentHTML() en een for loop alle zoekresultaten een voor een gerendert. Ook bij deze kunstwerken is de titel, de beschrijving en foto van hoge resolutie zichtbaar voor de gebruiker.
 
+## Activity Diagram
+<img width="934" alt="Schermafbeelding 2022-05-19 om 14 38 38" src="https://user-images.githubusercontent.com/70690100/169295439-c5474622-4622-4abe-add7-ce11638c26cf.png">
 
 
 
