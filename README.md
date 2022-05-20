@@ -25,7 +25,7 @@ Ik ga hier alle code uitleggen waardoor ik ben gekoment tot dit concept. Ik leg 
 Ik heb gebruik gemaakt van modules en Routie-min.js. Dankzij Jorn heb ik gebruik kunnen maken van Routie, dit omdat hij mij heel goed hier mee geholpen heeft. Zonder hem was dit waarschijnlijk niet gelukt.
 
 ### Fetchen van data
-````
+```javascript
 export const rijksData = 'https://www.rijksmuseum.nl/api/nl/collection?key=xvdOJegg';
 
 export const errorMelding = document.getElementById('error-melding');
@@ -46,7 +46,7 @@ export function getDataRijks() {
         feedback.textContent = '';
     });
 };
-````
+```
 Voordat je data kan fetchen moet je eerst de url van de API hebben. Ik heb de url hier in een constante variabele gezet onder de naam rijksData. Bij deze url zit mijn key al inbegrepen. Deze had ik eventueel los in een variabele genaamd key kunnen zetten en dan door middel van string interpolation.
 Als je eenmaal de url hebt kan de fetch functie beginnen. In de functie getDataRijks() wordt de fetch() methode toegepast die in dit geval de url rijksData fetchet. Omdat dit een promise is krijgen we een .then methode waarin aan wordt gegeven dat de response in een JSON formaat moet zijn. In de tweede .then wordt ook de functie getAdditonalData(collection) aangeroepen. Door middel van .catch wordt er een errormelding gegeven als het fetchen van data een error oplevert. 
 
