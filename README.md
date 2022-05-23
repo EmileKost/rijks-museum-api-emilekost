@@ -24,6 +24,9 @@ De API heeft drie verschillende API's:
 Ik ga hier alle code uitleggen waardoor ik ben gekoment tot dit concept. Ik leg hier het fetchen van data uit, het renderen van data, en de zoekfunctie. 
 Ik heb gebruik gemaakt van modules en Routie-min.js. Dankzij Jorn heb ik gebruik kunnen maken van Routie, dit omdat hij mij heel goed hier mee geholpen heeft. Zonder hem was dit waarschijnlijk niet gelukt.
 
+## Activity Diagram
+![DEZE](https://user-images.githubusercontent.com/70690100/169316773-3abedca6-19ce-4977-a05c-ff0e33d8c7cf.png)
+
 ### Fetchen van data
 ```javascript
 export const rijksData = 'https://www.rijksmuseum.nl/api/nl/collection?key=xvdOJegg';
@@ -173,8 +176,6 @@ Als de hash wordt verandert wordt de functie searchDataRijks(inputField) aangero
  ````
  Bij het renderen van de zoekresultaten wordt allereerst de header aangepast naar "Resultaten voor " + de zoekopdracht. Daarna worden de errormelding en feedback melding allebei verwijdert. Om de zoekresultaten kwijt te kunnen wordt er een resultsList variabele aangemaakt. Daarna wordt door middel van insertAdjacentHTML() en een for loop alle zoekresultaten een voor een gerendert. Ook bij deze kunstwerken is de titel, de beschrijving en foto van hoge resolutie zichtbaar voor de gebruiker.
 
-## Activity Diagram
-![DEZE](https://user-images.githubusercontent.com/70690100/169316773-3abedca6-19ce-4977-a05c-ff0e33d8c7cf.png)
 
 ## Features 
 * Tien willekeurige kunstwerken
