@@ -20,12 +20,12 @@ De API heeft drie verschillende API's:
 * Collection Image API
 <img width="769" alt="Schermafbeelding 2022-05-19 om 10 13 03" src="https://user-images.githubusercontent.com/70690100/169245778-c708bb5a-f835-4abe-bf96-0ad7d5b6cbfb.png">
 
+## Activity Diagram
+![DEZE](https://user-images.githubusercontent.com/70690100/169316773-3abedca6-19ce-4977-a05c-ff0e33d8c7cf.png)
+
 ## Code uitgelegd
 Ik ga hier alle code uitleggen waardoor ik ben gekoment tot dit concept. Ik leg hier het fetchen van data uit, het renderen van data, en de zoekfunctie. 
 Ik heb gebruik gemaakt van modules en Routie-min.js. Dankzij Jorn heb ik gebruik kunnen maken van Routie, dit omdat hij mij heel goed hier mee geholpen heeft. Zonder hem was dit waarschijnlijk niet gelukt.
-
-## Activity Diagram
-![DEZE](https://user-images.githubusercontent.com/70690100/169316773-3abedca6-19ce-4977-a05c-ff0e33d8c7cf.png)
 
 ### Fetchen van data
 ```javascript
